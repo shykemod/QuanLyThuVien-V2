@@ -9,10 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1.DataControler.DataDuAnTableAdapters;
-using static WindowsFormsApp1.DataControler.DataDuAn;
+using DuAn1.DataControler.DataDuAnTableAdapters;
+using static DuAn1.DataControler.DataDuAn;
 
-namespace WindowsFormsApp1.MenuControler
+namespace DuAn1.MenuControler
 {
     public partial class QuanLySach : UserControl
     {

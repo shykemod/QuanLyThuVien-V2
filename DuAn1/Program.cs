@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1.LoginControler;
+using DuAn1.LoginControler;
 
-namespace WindowsFormsApp1
+namespace DuAn1
 {
     internal static class Program
     {

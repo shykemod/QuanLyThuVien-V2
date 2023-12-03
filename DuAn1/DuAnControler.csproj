@@ -64,28 +64,34 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginControler\LoginRes.cs" />
-    <Compile Include="MenuControler\QuanLySach.cs">
+    <Compile Include="NhanVienControler\QuanLyNhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MenuControler\QuanLySach.Designer.cs">
+    <Compile Include="NhanVienControler\QuanLyNhanVien.Designer.cs">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SachControler\QuanLySach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SachControler\QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuControler\QuanLySachChiTiet.cs">
+    <Compile Include="SachControler\QuanLySachChiTiet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuControler\QuanLySachChiTiet.Designer.cs">
+    <Compile Include="SachControler\QuanLySachChiTiet.Designer.cs">
       <DependentUpon>QuanLySachChiTiet.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuControler\SuaSach.cs">
+    <Compile Include="SachControler\SuaSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuControler\SuaSach.Designer.cs">
+    <Compile Include="SachControler\SuaSach.Designer.cs">
       <DependentUpon>SuaSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuControler\ThemSach.cs">
+    <Compile Include="SachControler\ThemSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuControler\ThemSach.Designer.cs">
+    <Compile Include="SachControler\ThemSach.Designer.cs">
       <DependentUpon>ThemSach.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -96,16 +102,19 @@
     <EmbeddedResource Include="LoginControler\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuControler\QuanLySach.resx">
+    <EmbeddedResource Include="NhanVienControler\QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SachControler\QuanLySach.resx">
       <DependentUpon>QuanLySach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuControler\QuanLySachChiTiet.resx">
+    <EmbeddedResource Include="SachControler\QuanLySachChiTiet.resx">
       <DependentUpon>QuanLySachChiTiet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuControler\SuaSach.resx">
+    <EmbeddedResource Include="SachControler\SuaSach.resx">
       <DependentUpon>SuaSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuControler\ThemSach.resx">
+    <EmbeddedResource Include="SachControler\ThemSach.resx">
       <DependentUpon>ThemSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

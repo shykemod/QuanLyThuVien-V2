@@ -8,9 +8,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1.MenuControler;
+using DuAn1.MenuControler;
+using DuAn1.NhanVienControler;
 
-namespace WindowsFormsApp1
+namespace DuAn1
 {
     public partial class Dashboard : Form
     {
@@ -26,7 +27,14 @@ namespace WindowsFormsApp1
 
         private void btnQlSach_Click(object sender, EventArgs e)
         {
+            panelView.Controls.Clear();
             panelView.Controls.Add(new QuanLySach());
+        }
+
+        private void btnQLNV_Click(object sender, EventArgs e)
+        {
+            panelView.Controls.Clear();
+            panelView.Controls.Add(new QuanLyNhanVien());
         }
     }
 }

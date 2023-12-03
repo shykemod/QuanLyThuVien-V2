@@ -1,8 +1,10 @@
-﻿using System.Windows.Forms;
+﻿using System.Drawing;
+using System.Windows.Forms;
+using System;
 
-namespace WindowsFormsApp1.MenuControler
+namespace DuAn1.MenuControler
 {
-    partial class SuaSach
+    partial class ThemSach
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +44,7 @@ namespace WindowsFormsApp1.MenuControler
             this.tbTacGia = new System.Windows.Forms.TextBox();
             this.cbbViTri = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbBarcode
@@ -152,22 +154,22 @@ namespace WindowsFormsApp1.MenuControler
             this.label6.TabIndex = 13;
             this.label6.Text = "Vị trí";
             // 
-            // btnSua
+            // btnThem
             // 
-            this.btnSua.Location = new System.Drawing.Point(155, 141);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(179, 20);
-            this.btnSua.TabIndex = 14;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            this.btnThem.Location = new System.Drawing.Point(149, 138);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(179, 20);
+            this.btnThem.TabIndex = 14;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // SuaSach
+            // ThemSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 173);
-            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbbViTri);
             this.Controls.Add(this.label5);
@@ -183,9 +185,9 @@ namespace WindowsFormsApp1.MenuControler
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "SuaSach";
-            this.Text = "Sửa thông tin sách";
-            this.Load += new System.EventHandler(this.SuaSach_Load);
+            this.Name = "ThemSach";
+            this.Text = "Thêm thông tin sách";
+            this.Load += new System.EventHandler(this.ThemSach_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,6 +207,6 @@ namespace WindowsFormsApp1.MenuControler
         private TextBox tbTacGia;
         private ComboBox cbbViTri;
         private Label label6;
-        private Button btnSua;
+        private Button btnThem;
     }
 }

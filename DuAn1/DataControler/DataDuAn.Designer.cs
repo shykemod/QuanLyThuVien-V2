@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace WindowsFormsApp1.DataControler {
+namespace DuAn1.DataControler {
     
     
     /// <summary>
@@ -7533,7 +7533,7 @@ namespace WindowsFormsApp1.DataControler {
         }
     }
 }
-namespace WindowsFormsApp1.DataControler.DataDuAnTableAdapters {
+namespace DuAn1.DataControler.DataDuAnTableAdapters {
     
     
     /// <summary>
@@ -7710,7 +7710,7 @@ SELECT idLichSu, soTienNap, diemCongUyTin, ngayNap, idTheThuVien FROM LichSuNap 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8126,7 +8126,7 @@ SELECT idThietHai, idPhieuTra, moTa FROM ThietHaiChiTiet WHERE (idPhieuTra = @id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8504,7 +8504,7 @@ SELECT id, mucTien, soDiemCong FROM MucDiemCong WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8897,7 +8897,7 @@ SELECT idNhanVien, hoTen, gioiTinh, soDienThoai, diaChi, ngaySinh, email, trangT
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9447,7 +9447,7 @@ SELECT idPhieuMuon, idTheThuVien, tongSachMuon, ngayTaoPhieu, trangThai FROM Phi
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9924,7 +9924,7 @@ SELECT idPhieuMuonChiTiet, idPhieuMuon, idNhanVien, barCodeMaSach, soLuongSach, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10514,7 +10514,7 @@ SELECT idPhieuTra, soLuongTra, thoiGianTraSach, tinhTrangSach, barCodeMaSach, id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11027,7 +11027,7 @@ SELECT barCodeSach, tenSach, giaTien, namXuatBan, TacGiaSach, TheLoaiSach FROM S
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11526,7 +11526,7 @@ SELECT barCodeMaSach, barCodeSach, tinhTrangSach, lanTaiBan, kichCo, namTaiBan, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12076,7 +12076,7 @@ SELECT idTaiKhoan, userName, passWord, idNhanVien, role FROM TaiKhoan WHERE (idT
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12487,7 +12487,7 @@ SELECT viTriKeSach, tenTheLoai FROM TheLoaiSach WHERE (viTriKeSach = @viTriKeSac
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12852,7 +12852,7 @@ SELECT idTheThuVien, hoTen, soDienThoai, diemUyTin, trangThai FROM TheThuVien WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13289,7 +13289,7 @@ SELECT idThietHai, tenThietHai, diemTruUyTin FROM ThietHai WHERE (idThietHai = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.DuAn1ConnectionString;
+            this._connection.ConnectionString = global::DuAn1.Properties.Settings.Default.DuAn1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

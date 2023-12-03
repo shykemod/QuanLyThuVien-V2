@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1.DataControler.DataDuAnTableAdapters;
-using static WindowsFormsApp1.DataControler.DataDuAn;
+using DuAn1.DataControler.DataDuAnTableAdapters;
+using static DuAn1.DataControler.DataDuAn;
 
-namespace WindowsFormsApp1.MenuControler
+namespace DuAn1.MenuControler
 {
     public partial class QuanLySachChiTiet : Form
     {
         string BarcodeSach;
+        int IndexSelect = 0;
+        List<SachChiTietRow> dataSachChiTiet;
+
         public QuanLySachChiTiet(string id)
         {
             InitializeComponent();
@@ -23,7 +26,7 @@ namespace WindowsFormsApp1.MenuControler
 
         void ShowData()
         {
-            List<SachChiTietRow> dataSachChiTiet = new SachChiTietTableAdapter().GetData().Where(a => a.Field<string>("barCodeSach").Equals(BarcodeSach)).ToList();
+            dataSachChiTiet = new SachChiTietTableAdapter().GetData().Where(a => a.Field<string>("barCodeSach").Equals(BarcodeSach)).ToList();
             for (int i = 1; i <= dataSachChiTiet.Count(); i++)
             {
                 var sachCT = dataSachChiTiet[i-1];
@@ -45,6 +48,12 @@ namespace WindowsFormsApp1.MenuControler
             ShowData();
             tbBarcode.Text = BarcodeSach;
             labelNameShow.Text = new SachTableAdapter().GetData().FindBybarCodeSach(BarcodeSach).tenSach;
+        }
+
+        private void DgSachCT_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            IndexSelect = e.RowIndex;
+
         }
     }
 }

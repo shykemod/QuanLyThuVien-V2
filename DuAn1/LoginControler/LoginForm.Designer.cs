@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1.LoginControler
+﻿namespace DuAn1.LoginControler
 {
     partial class LoginForm
     {

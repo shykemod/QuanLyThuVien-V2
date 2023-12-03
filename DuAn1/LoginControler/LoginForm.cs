@@ -8,10 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1.DataControler;
-using WindowsFormsApp1.DataControler.DataDuAnTableAdapters;
+using DuAn1.DataControler;
+using DuAn1.DataControler.DataDuAnTableAdapters;
 
-namespace WindowsFormsApp1.LoginControler
+namespace DuAn1.LoginControler
 {
     public partial class LoginForm : Form
     {

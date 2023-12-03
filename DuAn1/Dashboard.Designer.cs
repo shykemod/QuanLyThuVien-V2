@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace DuAn1
 {
     partial class Dashboard
     {
@@ -32,9 +32,10 @@
             this.panelView = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnQlSach = new System.Windows.Forms.Button();
-            this.dataDuAn = new WindowsFormsApp1.DataControler.DataDuAn();
+            this.dataDuAn = new DuAn1.DataControler.DataDuAn();
             this.sachBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sachTableAdapter = new WindowsFormsApp1.DataControler.DataDuAnTableAdapters.SachTableAdapter();
+            this.sachTableAdapter = new DuAn1.DataControler.DataDuAnTableAdapters.SachTableAdapter();
+            this.btnQLNV = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDuAn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sachBindingSource)).BeginInit();
@@ -49,6 +50,7 @@
             // 
             // panelMenu
             // 
+            this.panelMenu.Controls.Add(this.btnQLNV);
             this.panelMenu.Controls.Add(this.btnQlSach);
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
@@ -79,6 +81,16 @@
             // 
             this.sachTableAdapter.ClearBeforeFill = true;
             // 
+            // btnQLNV
+            // 
+            this.btnQLNV.Location = new System.Drawing.Point(13, 142);
+            this.btnQLNV.Name = "btnQLNV";
+            this.btnQLNV.Size = new System.Drawing.Size(154, 23);
+            this.btnQLNV.TabIndex = 1;
+            this.btnQLNV.Text = "Quản lý nhân viên";
+            this.btnQLNV.UseVisualStyleBackColor = true;
+            this.btnQLNV.Click += new System.EventHandler(this.btnQLNV_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,5 +118,6 @@
         private System.Windows.Forms.BindingSource sachBindingSource;
         private DataControler.DataDuAnTableAdapters.SachTableAdapter sachTableAdapter;
         private System.Windows.Forms.Button btnQlSach;
+        private System.Windows.Forms.Button btnQLNV;
     }
 }
