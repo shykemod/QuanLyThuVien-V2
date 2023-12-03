@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DuAn1.DataControler.DataDuAnTableAdapters;
+using DuAn1.LoginControler;
 using static DuAn1.DataControler.DataDuAn;
 
 namespace DuAn1.MenuControler
@@ -18,6 +19,7 @@ namespace DuAn1.MenuControler
     {
         List<SachRow> dataSach;
         int IndexSelect = 0;
+
         public QuanLySach()
         {
             InitializeComponent();
@@ -32,11 +34,11 @@ namespace DuAn1.MenuControler
 
         int getCountById(string id)
         {
-            var dataSachChiTiet = new SachChiTietTableAdapter().GetData().Where(a => a.Field<string>("barCodeSach").Equals(id));
+            var dataSachChiTiet = new SachChiTietTableAdapter().GetData().Where(a => a.barCodeSach.Equals(id));
             return dataSachChiTiet.Count();
         }
 
-        void ShowData() 
+        public void ShowData() 
         {
             if (tbFind.Text.Length == 0) dataSach = new SachTableAdapter().GetData().ToList();
             else
@@ -76,6 +78,7 @@ namespace DuAn1.MenuControler
         {
             Form sachCT = new QuanLySachChiTiet((string)(new SachTableAdapter().GetData().Rows[e.RowIndex])["BarCodeSach"]);
             sachCT.ShowDialog();
+            ShowData();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -100,16 +103,14 @@ namespace DuAn1.MenuControler
                     var currentSach = (new SachTableAdapter().GetData().ToList())[IndexSelect];
                     var sach = new SachTableAdapter();
                     int result = sach.Delete(currentSach.barCodeSach, currentSach.tenSach, currentSach.giaTien, currentSach.namXuatBan, currentSach.TacGiaSach, currentSach.TheLoaiSach);
-                    if (result > 0) MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                    if (result > 0) { MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); ShowData(); }
                     else MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 catch (Exception)
                 {
                     MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                
             }
-            return;
         }
 
         private void DgSach_CellClick(object sender, DataGridViewCellEventArgs e)

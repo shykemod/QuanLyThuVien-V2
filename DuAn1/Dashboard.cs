@@ -15,6 +15,8 @@ namespace DuAn1
 {
     public partial class Dashboard : Form
     {
+        public QuanLySach qlSachForm = new QuanLySach();
+        public QuanLyNhanVien qlNhanVienForm = new QuanLyNhanVien();
         public Dashboard()
         {
             InitializeComponent();
@@ -22,19 +24,19 @@ namespace DuAn1
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            panelView.Controls.Add(new QuanLySach());
+            panelView.Controls.Add(qlSachForm);
         }
 
         private void btnQlSach_Click(object sender, EventArgs e)
         {
             panelView.Controls.Clear();
-            panelView.Controls.Add(new QuanLySach());
+            panelView.Controls.Add(qlSachForm);
         }
 
         private void btnQLNV_Click(object sender, EventArgs e)
         {
             panelView.Controls.Clear();
-            panelView.Controls.Add(new QuanLyNhanVien());
+            panelView.Controls.Add(qlNhanVienForm);
         }
     }
 }

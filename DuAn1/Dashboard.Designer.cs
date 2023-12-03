@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.panelView = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnQLNV = new System.Windows.Forms.Button();
             this.btnQlSach = new System.Windows.Forms.Button();
             this.dataDuAn = new DuAn1.DataControler.DataDuAn();
             this.sachBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sachTableAdapter = new DuAn1.DataControler.DataDuAnTableAdapters.SachTableAdapter();
-            this.btnQLNV = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDuAn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sachBindingSource)).BeginInit();
@@ -43,6 +43,7 @@
             // 
             // panelView
             // 
+            this.panelView.BackColor = System.Drawing.SystemColors.Control;
             this.panelView.Location = new System.Drawing.Point(175, 0);
             this.panelView.Name = "panelView";
             this.panelView.Size = new System.Drawing.Size(1070, 584);
@@ -50,6 +51,7 @@
             // 
             // panelMenu
             // 
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelMenu.Controls.Add(this.btnQLNV);
             this.panelMenu.Controls.Add(this.btnQlSach);
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -57,11 +59,21 @@
             this.panelMenu.Size = new System.Drawing.Size(170, 590);
             this.panelMenu.TabIndex = 1;
             // 
+            // btnQLNV
+            // 
+            this.btnQLNV.Location = new System.Drawing.Point(0, 142);
+            this.btnQLNV.Name = "btnQLNV";
+            this.btnQLNV.Size = new System.Drawing.Size(170, 50);
+            this.btnQLNV.TabIndex = 1;
+            this.btnQLNV.Text = "Quản lý nhân viên";
+            this.btnQLNV.UseVisualStyleBackColor = true;
+            this.btnQLNV.Click += new System.EventHandler(this.btnQLNV_Click);
+            // 
             // btnQlSach
             // 
-            this.btnQlSach.Location = new System.Drawing.Point(13, 113);
+            this.btnQlSach.Location = new System.Drawing.Point(0, 87);
             this.btnQlSach.Name = "btnQlSach";
-            this.btnQlSach.Size = new System.Drawing.Size(154, 23);
+            this.btnQlSach.Size = new System.Drawing.Size(170, 50);
             this.btnQlSach.TabIndex = 0;
             this.btnQlSach.Text = "Quản lý sách";
             this.btnQlSach.UseVisualStyleBackColor = true;
@@ -81,16 +93,6 @@
             // 
             this.sachTableAdapter.ClearBeforeFill = true;
             // 
-            // btnQLNV
-            // 
-            this.btnQLNV.Location = new System.Drawing.Point(13, 142);
-            this.btnQLNV.Name = "btnQLNV";
-            this.btnQLNV.Size = new System.Drawing.Size(154, 23);
-            this.btnQLNV.TabIndex = 1;
-            this.btnQLNV.Text = "Quản lý nhân viên";
-            this.btnQLNV.UseVisualStyleBackColor = true;
-            this.btnQLNV.Click += new System.EventHandler(this.btnQLNV_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +103,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelMenu.ResumeLayout(false);

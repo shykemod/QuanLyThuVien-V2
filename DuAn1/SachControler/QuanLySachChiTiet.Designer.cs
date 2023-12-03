@@ -31,8 +31,8 @@ namespace DuAn1.MenuControler
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DgSachCT = new System.Windows.Forms.DataGridView();
             this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,14 +76,14 @@ namespace DuAn1.MenuControler
             this.DgSachCT.AllowUserToResizeRows = false;
             this.DgSachCT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgSachCT.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgSachCT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgSachCT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.DgSachCT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgSachCT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.stt,
@@ -94,14 +94,14 @@ namespace DuAn1.MenuControler
             this.KichCo,
             this.DiemUyTin,
             this.NhaXuatBan});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgSachCT.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgSachCT.DefaultCellStyle = dataGridViewCellStyle22;
             this.DgSachCT.GridColor = System.Drawing.Color.DarkGray;
             this.DgSachCT.Location = new System.Drawing.Point(13, 182);
             this.DgSachCT.Name = "DgSachCT";
@@ -171,6 +171,7 @@ namespace DuAn1.MenuControler
             this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa sách";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnDelete
             // 
@@ -180,6 +181,7 @@ namespace DuAn1.MenuControler
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Xóa sách";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnThem
             // 
@@ -189,6 +191,7 @@ namespace DuAn1.MenuControler
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm sách";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label2
             // 
@@ -256,7 +259,6 @@ namespace DuAn1.MenuControler
             this.tbKichCo.Location = new System.Drawing.Point(689, 44);
             this.tbKichCo.MaxLength = 13;
             this.tbKichCo.Name = "tbKichCo";
-            this.tbKichCo.ReadOnly = true;
             this.tbKichCo.Size = new System.Drawing.Size(147, 20);
             this.tbKichCo.TabIndex = 28;
             // 
@@ -284,7 +286,6 @@ namespace DuAn1.MenuControler
             this.tbNhaXuatBan.Location = new System.Drawing.Point(413, 70);
             this.tbNhaXuatBan.MaxLength = 50;
             this.tbNhaXuatBan.Name = "tbNhaXuatBan";
-            this.tbNhaXuatBan.ReadOnly = true;
             this.tbNhaXuatBan.Size = new System.Drawing.Size(210, 20);
             this.tbNhaXuatBan.TabIndex = 25;
             // 
@@ -303,7 +304,6 @@ namespace DuAn1.MenuControler
             this.tbUyTin.Location = new System.Drawing.Point(98, 71);
             this.tbUyTin.MaxLength = 10;
             this.tbUyTin.Name = "tbUyTin";
-            this.tbUyTin.ReadOnly = true;
             this.tbUyTin.Size = new System.Drawing.Size(210, 20);
             this.tbUyTin.TabIndex = 23;
             // 
@@ -322,7 +322,6 @@ namespace DuAn1.MenuControler
             this.tbNamTaiBan.Location = new System.Drawing.Point(413, 44);
             this.tbNamTaiBan.MaxLength = 4;
             this.tbNamTaiBan.Name = "tbNamTaiBan";
-            this.tbNamTaiBan.ReadOnly = true;
             this.tbNamTaiBan.Size = new System.Drawing.Size(210, 20);
             this.tbNamTaiBan.TabIndex = 21;
             // 
@@ -341,7 +340,6 @@ namespace DuAn1.MenuControler
             this.tbLanTaiBan.Location = new System.Drawing.Point(413, 18);
             this.tbLanTaiBan.MaxLength = 10;
             this.tbLanTaiBan.Name = "tbLanTaiBan";
-            this.tbLanTaiBan.ReadOnly = true;
             this.tbLanTaiBan.Size = new System.Drawing.Size(210, 20);
             this.tbLanTaiBan.TabIndex = 19;
             // 
@@ -360,7 +358,6 @@ namespace DuAn1.MenuControler
             this.tbTinhTrang.Location = new System.Drawing.Point(98, 45);
             this.tbTinhTrang.MaxLength = 50;
             this.tbTinhTrang.Name = "tbTinhTrang";
-            this.tbTinhTrang.ReadOnly = true;
             this.tbTinhTrang.Size = new System.Drawing.Size(210, 20);
             this.tbTinhTrang.TabIndex = 17;
             // 
@@ -379,7 +376,6 @@ namespace DuAn1.MenuControler
             this.tbBarcodeSach.Location = new System.Drawing.Point(98, 19);
             this.tbBarcodeSach.MaxLength = 13;
             this.tbBarcodeSach.Name = "tbBarcodeSach";
-            this.tbBarcodeSach.ReadOnly = true;
             this.tbBarcodeSach.Size = new System.Drawing.Size(210, 20);
             this.tbBarcodeSach.TabIndex = 15;
             // 
@@ -387,7 +383,7 @@ namespace DuAn1.MenuControler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(871, 525);
+            this.ClientSize = new System.Drawing.Size(874, 525);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labelNameShow);
             this.Controls.Add(this.lbName);
@@ -398,8 +394,11 @@ namespace DuAn1.MenuControler
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.DgSachCT);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "QuanLySachChiTiet";
-            this.Text = "QuanLySachChiTiet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Quản lý sách chi tiết";
             this.Load += new System.EventHandler(this.QuanLySachChiTiet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgSachCT)).EndInit();
             this.groupBox1.ResumeLayout(false);

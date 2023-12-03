@@ -14,11 +14,13 @@ namespace DuAn1.LoginControler
     public class LoginRes
     {
         public static DataRow UserProperties;
+        public static Dashboard dashboard;
+
         public static DataRow Login(string user, string password)
         {
 
             var TaiKhoanData = new TaiKhoanTableAdapter();
-            DataRow check = TaiKhoanData.GetData().FirstOrDefault(tk => tk.Field<string>("userName").Equals(user) && tk.Field<string>("passWord").Equals(password));
+            DataRow check = TaiKhoanData.GetData().FirstOrDefault(tk => tk.userName.Equals(user) && tk.passWord.Equals(password));
             return check;
         }
     }

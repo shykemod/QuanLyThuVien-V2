@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tbKichCo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -81,9 +81,9 @@
             this.groupBox1.Controls.Add(this.tbTinhTrang);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.tbBarcodeSach);
-            this.groupBox1.Location = new System.Drawing.Point(18, 53);
+            this.groupBox1.Location = new System.Drawing.Point(5, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1027, 104);
+            this.groupBox1.Size = new System.Drawing.Size(1062, 104);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sách";
@@ -224,7 +224,7 @@
             // labelNameShow
             // 
             this.labelNameShow.AutoSize = true;
-            this.labelNameShow.Location = new System.Drawing.Point(519, 26);
+            this.labelNameShow.Location = new System.Drawing.Point(506, 24);
             this.labelNameShow.Name = "labelNameShow";
             this.labelNameShow.Size = new System.Drawing.Size(23, 13);
             this.labelNameShow.TabIndex = 25;
@@ -233,7 +233,7 @@
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(460, 26);
+            this.lbName.Location = new System.Drawing.Point(447, 24);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(55, 13);
             this.lbName.TabIndex = 24;
@@ -242,7 +242,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 26);
+            this.label2.Location = new System.Drawing.Point(6, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 23;
@@ -251,36 +251,36 @@
             // tbBarcode
             // 
             this.tbBarcode.BackColor = System.Drawing.Color.White;
-            this.tbBarcode.Location = new System.Drawing.Point(116, 23);
+            this.tbBarcode.Location = new System.Drawing.Point(103, 21);
             this.tbBarcode.MaxLength = 13;
             this.tbBarcode.Name = "tbBarcode";
             this.tbBarcode.ReadOnly = true;
-            this.tbBarcode.Size = new System.Drawing.Size(281, 20);
+            this.tbBarcode.Size = new System.Drawing.Size(316, 20);
             this.tbBarcode.TabIndex = 22;
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(846, 160);
+            this.btnSua.Location = new System.Drawing.Point(807, 158);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(96, 23);
+            this.btnSua.Size = new System.Drawing.Size(123, 23);
             this.btnSua.TabIndex = 21;
             this.btnSua.Text = "Sửa sách";
             this.btnSua.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(949, 160);
+            this.btnDelete.Location = new System.Drawing.Point(936, 158);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(96, 23);
+            this.btnDelete.Size = new System.Drawing.Size(131, 23);
             this.btnDelete.TabIndex = 20;
             this.btnDelete.Text = "Xóa sách";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(744, 160);
+            this.btnThem.Location = new System.Drawing.Point(670, 158);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(96, 23);
+            this.btnThem.Size = new System.Drawing.Size(131, 23);
             this.btnThem.TabIndex = 19;
             this.btnThem.Text = "Thêm sách";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -293,14 +293,14 @@
             this.DgSachCT.AllowUserToResizeRows = false;
             this.DgSachCT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgSachCT.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgSachCT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgSachCT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DgSachCT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgSachCT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.stt,
@@ -311,21 +311,21 @@
             this.KichCo,
             this.DiemUyTin,
             this.NhaXuatBan});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgSachCT.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgSachCT.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgSachCT.GridColor = System.Drawing.Color.DarkGray;
-            this.DgSachCT.Location = new System.Drawing.Point(16, 189);
+            this.DgSachCT.Location = new System.Drawing.Point(0, 187);
             this.DgSachCT.Name = "DgSachCT";
             this.DgSachCT.ReadOnly = true;
             this.DgSachCT.RowTemplate.Height = 25;
             this.DgSachCT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgSachCT.Size = new System.Drawing.Size(1029, 372);
+            this.DgSachCT.Size = new System.Drawing.Size(1070, 372);
             this.DgSachCT.TabIndex = 18;
             // 
             // stt
@@ -383,6 +383,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labelNameShow);
             this.Controls.Add(this.lbName);

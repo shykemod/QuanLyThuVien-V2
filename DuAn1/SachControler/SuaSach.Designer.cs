@@ -184,6 +184,7 @@ namespace DuAn1.MenuControler
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SuaSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Sửa thông tin sách";
             this.Load += new System.EventHandler(this.SuaSach_Load);
             this.ResumeLayout(false);
