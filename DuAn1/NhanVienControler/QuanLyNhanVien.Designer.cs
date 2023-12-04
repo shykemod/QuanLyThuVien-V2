@@ -47,6 +47,12 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.DgNhanVien = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,12 +63,6 @@
             this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passWord = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgNhanVien)).BeginInit();
             this.SuspendLayout();
@@ -214,7 +214,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(123, 23);
             this.btnSua.TabIndex = 21;
-            this.btnSua.Text = "Sửa sách";
+            this.btnSua.Text = "Sửa nhân viên";
             this.btnSua.UseVisualStyleBackColor = true;
             // 
             // btnDelete
@@ -223,7 +223,7 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(131, 23);
             this.btnDelete.TabIndex = 20;
-            this.btnDelete.Text = "Xóa sách";
+            this.btnDelete.Text = "Xóa nhân viên";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnThem
@@ -232,7 +232,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(131, 23);
             this.btnThem.TabIndex = 19;
-            this.btnThem.Text = "Thêm sách";
+            this.btnThem.Text = "Thêm nhân viên";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
             // DgNhanVien
@@ -280,71 +280,6 @@
             this.DgNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgNhanVien.Size = new System.Drawing.Size(1070, 414);
             this.DgNhanVien.TabIndex = 18;
-            // 
-            // stt
-            // 
-            this.stt.FillWeight = 30F;
-            this.stt.HeaderText = "Stt";
-            this.stt.MinimumWidth = 40;
-            this.stt.Name = "stt";
-            this.stt.ReadOnly = true;
-            // 
-            // idNhanVien
-            // 
-            this.idNhanVien.FillWeight = 50F;
-            this.idNhanVien.HeaderText = "ID";
-            this.idNhanVien.Name = "idNhanVien";
-            this.idNhanVien.ReadOnly = true;
-            // 
-            // hoTen
-            // 
-            this.hoTen.FillWeight = 120F;
-            this.hoTen.HeaderText = "Họ tên";
-            this.hoTen.Name = "hoTen";
-            this.hoTen.ReadOnly = true;
-            // 
-            // gioiTinh
-            // 
-            this.gioiTinh.FillWeight = 60F;
-            this.gioiTinh.HeaderText = "Giới tính";
-            this.gioiTinh.Name = "gioiTinh";
-            this.gioiTinh.ReadOnly = true;
-            // 
-            // ngaySinh
-            // 
-            this.ngaySinh.HeaderText = "Ngày sinh";
-            this.ngaySinh.Name = "ngaySinh";
-            this.ngaySinh.ReadOnly = true;
-            // 
-            // soDienThoai
-            // 
-            this.soDienThoai.HeaderText = "Số điện thoại";
-            this.soDienThoai.Name = "soDienThoai";
-            this.soDienThoai.ReadOnly = true;
-            // 
-            // email
-            // 
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            // 
-            // diaChi
-            // 
-            this.diaChi.HeaderText = "Địa chỉ";
-            this.diaChi.Name = "diaChi";
-            this.diaChi.ReadOnly = true;
-            // 
-            // userName
-            // 
-            this.userName.HeaderText = "User Name";
-            this.userName.Name = "userName";
-            this.userName.ReadOnly = true;
-            // 
-            // passWord
-            // 
-            this.passWord.HeaderText = "Password";
-            this.passWord.Name = "passWord";
-            this.passWord.ReadOnly = true;
             // 
             // label1
             // 
@@ -403,6 +338,73 @@
             this.label10.TabIndex = 32;
             this.label10.Text = "Password: ";
             // 
+            // stt
+            // 
+            this.stt.FillWeight = 30F;
+            this.stt.HeaderText = "Stt";
+            this.stt.MinimumWidth = 40;
+            this.stt.Name = "stt";
+            this.stt.ReadOnly = true;
+            // 
+            // idNhanVien
+            // 
+            this.idNhanVien.FillWeight = 50F;
+            this.idNhanVien.HeaderText = "ID";
+            this.idNhanVien.Name = "idNhanVien";
+            this.idNhanVien.ReadOnly = true;
+            // 
+            // hoTen
+            // 
+            this.hoTen.FillWeight = 120F;
+            this.hoTen.HeaderText = "Họ tên";
+            this.hoTen.Name = "hoTen";
+            this.hoTen.ReadOnly = true;
+            // 
+            // gioiTinh
+            // 
+            this.gioiTinh.FillWeight = 60F;
+            this.gioiTinh.HeaderText = "Giới tính";
+            this.gioiTinh.Name = "gioiTinh";
+            this.gioiTinh.ReadOnly = true;
+            // 
+            // ngaySinh
+            // 
+            this.ngaySinh.HeaderText = "Ngày sinh";
+            this.ngaySinh.Name = "ngaySinh";
+            this.ngaySinh.ReadOnly = true;
+            // 
+            // soDienThoai
+            // 
+            this.soDienThoai.FillWeight = 80F;
+            this.soDienThoai.HeaderText = "Số điện thoại";
+            this.soDienThoai.Name = "soDienThoai";
+            this.soDienThoai.ReadOnly = true;
+            // 
+            // email
+            // 
+            this.email.FillWeight = 130F;
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            // 
+            // diaChi
+            // 
+            this.diaChi.HeaderText = "Địa chỉ";
+            this.diaChi.Name = "diaChi";
+            this.diaChi.ReadOnly = true;
+            // 
+            // userName
+            // 
+            this.userName.HeaderText = "User Name";
+            this.userName.Name = "userName";
+            this.userName.ReadOnly = true;
+            // 
+            // passWord
+            // 
+            this.passWord.HeaderText = "Password";
+            this.passWord.Name = "passWord";
+            this.passWord.ReadOnly = true;
+            // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -442,6 +444,12 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView DgNhanVien;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn idNhanVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoTen;
@@ -452,11 +460,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn userName;
         private System.Windows.Forms.DataGridViewTextBoxColumn passWord;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
     }
 }

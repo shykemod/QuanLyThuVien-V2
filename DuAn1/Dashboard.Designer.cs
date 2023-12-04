@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panelView = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnQLNV = new System.Windows.Forms.Button();
             this.btnQlSach = new System.Windows.Forms.Button();
-            this.sachBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sachBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelView
@@ -90,7 +87,6 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.sachBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -99,7 +95,6 @@
 
         private System.Windows.Forms.Panel panelView;
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.BindingSource sachBindingSource;
         private System.Windows.Forms.Button btnQlSach;
         private System.Windows.Forms.Button btnQLNV;
     }
