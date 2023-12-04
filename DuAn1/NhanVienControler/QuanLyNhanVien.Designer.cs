@@ -28,17 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tbNhaXuatBan = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbUyTin = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbNamTaiBan = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbLanTaiBan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbTinhTrang = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,6 +61,8 @@
             this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passWord = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgNhanVien)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Silver;
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -79,11 +81,9 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.tbNhaXuatBan);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.tbUyTin);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.tbNamTaiBan);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.tbLanTaiBan);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.tbTinhTrang);
             this.groupBox1.Controls.Add(this.label3);
@@ -109,7 +109,6 @@
             this.tbNhaXuatBan.Location = new System.Drawing.Point(445, 74);
             this.tbNhaXuatBan.MaxLength = 50;
             this.tbNhaXuatBan.Name = "tbNhaXuatBan";
-            this.tbNhaXuatBan.ReadOnly = true;
             this.tbNhaXuatBan.Size = new System.Drawing.Size(210, 20);
             this.tbNhaXuatBan.TabIndex = 25;
             // 
@@ -121,16 +120,6 @@
             this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 24;
             this.label7.Text = "Giới tính: ";
-            // 
-            // tbUyTin
-            // 
-            this.tbUyTin.BackColor = System.Drawing.Color.White;
-            this.tbUyTin.Location = new System.Drawing.Point(98, 71);
-            this.tbUyTin.MaxLength = 10;
-            this.tbUyTin.Name = "tbUyTin";
-            this.tbUyTin.ReadOnly = true;
-            this.tbUyTin.Size = new System.Drawing.Size(210, 20);
-            this.tbUyTin.TabIndex = 23;
             // 
             // label6
             // 
@@ -147,7 +136,6 @@
             this.tbNamTaiBan.Location = new System.Drawing.Point(445, 48);
             this.tbNamTaiBan.MaxLength = 4;
             this.tbNamTaiBan.Name = "tbNamTaiBan";
-            this.tbNamTaiBan.ReadOnly = true;
             this.tbNamTaiBan.Size = new System.Drawing.Size(210, 20);
             this.tbNamTaiBan.TabIndex = 21;
             // 
@@ -159,16 +147,6 @@
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 20;
             this.label5.Text = "Ngày sinh:";
-            // 
-            // tbLanTaiBan
-            // 
-            this.tbLanTaiBan.BackColor = System.Drawing.Color.White;
-            this.tbLanTaiBan.Location = new System.Drawing.Point(445, 22);
-            this.tbLanTaiBan.MaxLength = 10;
-            this.tbLanTaiBan.Name = "tbLanTaiBan";
-            this.tbLanTaiBan.ReadOnly = true;
-            this.tbLanTaiBan.Size = new System.Drawing.Size(210, 20);
-            this.tbLanTaiBan.TabIndex = 19;
             // 
             // label4
             // 
@@ -185,7 +163,6 @@
             this.tbTinhTrang.Location = new System.Drawing.Point(98, 45);
             this.tbTinhTrang.MaxLength = 50;
             this.tbTinhTrang.Name = "tbTinhTrang";
-            this.tbTinhTrang.ReadOnly = true;
             this.tbTinhTrang.Size = new System.Drawing.Size(210, 20);
             this.tbTinhTrang.TabIndex = 17;
             // 
@@ -204,7 +181,6 @@
             this.tbBarcodeSach.Location = new System.Drawing.Point(98, 19);
             this.tbBarcodeSach.MaxLength = 13;
             this.tbBarcodeSach.Name = "tbBarcodeSach";
-            this.tbBarcodeSach.ReadOnly = true;
             this.tbBarcodeSach.Size = new System.Drawing.Size(210, 20);
             this.tbBarcodeSach.TabIndex = 15;
             // 
@@ -243,14 +219,14 @@
             this.DgNhanVien.AllowUserToResizeRows = false;
             this.DgNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgNhanVien.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.DgNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.stt,
@@ -263,14 +239,14 @@
             this.diaChi,
             this.userName,
             this.passWord});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgNhanVien.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgNhanVien.DefaultCellStyle = dataGridViewCellStyle18;
             this.DgNhanVien.GridColor = System.Drawing.Color.DarkGray;
             this.DgNhanVien.Location = new System.Drawing.Point(0, 167);
             this.DgNhanVien.MultiSelect = false;
@@ -296,7 +272,6 @@
             this.textBox1.Location = new System.Drawing.Point(780, 23);
             this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(210, 20);
             this.textBox1.TabIndex = 28;
             // 
@@ -306,7 +281,6 @@
             this.textBox2.Location = new System.Drawing.Point(780, 50);
             this.textBox2.MaxLength = 10;
             this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(210, 20);
             this.textBox2.TabIndex = 29;
             // 
@@ -316,7 +290,6 @@
             this.textBox3.Location = new System.Drawing.Point(780, 76);
             this.textBox3.MaxLength = 10;
             this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(210, 20);
             this.textBox3.TabIndex = 30;
             // 
@@ -405,6 +378,26 @@
             this.passWord.Name = "passWord";
             this.passWord.ReadOnly = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(98, 69);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(210, 21);
+            this.comboBox1.TabIndex = 33;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(445, 20);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2023, 12, 4, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(210, 20);
+            this.dateTimePicker1.TabIndex = 34;
+            this.dateTimePicker1.Value = new System.DateTime(2023, 12, 4, 0, 0, 0, 0);
+            // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,11 +424,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbNhaXuatBan;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tbUyTin;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbNamTaiBan;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbLanTaiBan;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbTinhTrang;
         private System.Windows.Forms.Label label3;
@@ -460,5 +451,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn userName;
         private System.Windows.Forms.DataGridViewTextBoxColumn passWord;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
