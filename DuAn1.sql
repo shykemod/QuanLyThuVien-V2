@@ -27,16 +27,9 @@ create table NhanVien
 	diaChi nvarchar(150),
 	ngaySinh Date,
 	email varchar(100),
-	trangThai int ---1: hoạt động, 0: nghỉ việc
-);
-go
-create table TaiKhoan
-(
-	idTaiKhoan uniqueidentifier primary key,
 	userName varchar(50),
 	[passWord] varchar(50),
-	idNhanVien varchar(10) unique references NhanVien(idNhanVien),
-	[role] bit ----1: nhân viên, ---2: quản lý
+	[role] bit
 )
 go
 create table TheThuVien 
@@ -149,18 +142,11 @@ VALUES
 go
 
 go
-INSERT INTO NhanVien (idNhanVien, hoTen, gioiTinh, soDienThoai, diaChi, ngaySinh, email, trangThai)
+INSERT INTO NhanVien (idNhanVien, hoTen, gioiTinh, soDienThoai, diaChi, ngaySinh, email, userName, [passWord], [role])
 VALUES
-  ('NV000', 'Admin', 0, '', '', '', '', 1),
-  ('NV001', 'Le Thi C', 0, '0987654321', 'Da Nang', '1988-10-05', 'lethi.c@email.com', 1),
-  ('NV002', 'Pham Van D', 1, '0123456789', 'Hue', '1995-02-15', 'phamvan.d@email.com', 1)
-
-go
-INSERT INTO TaiKhoan (idTaiKhoan, userName, passWord, idNhanVien, [role])
-VALUES
-  (NEWID(), 'admin', 'admin', 'NV000', 1),
-  (NEWID(), 'user1', 'pass1', 'NV001', 0),
-  (NEWID(), 'user2', 'pass2', 'NV002', 0)
+  ('NV000', 'Admin', 0, '', '', '', '', 'admin', 'admin', 1),
+  ('NV001', 'Le Thi C', 0, '0987654321', 'Da Nang', '1988-10-05', 'lethi.c@email.com', 'user1', 'pass1', 0),
+  ('NV002', 'Pham Van D', 1, '0123456789', 'Hue', '1995-02-15', 'phamvan.d@email.com', 'user2', 'pass2', 0)
 
 go
 INSERT INTO TheThuVien (idTheThuVien, hoTen, soDienThoai, diemUyTin, trangThai)

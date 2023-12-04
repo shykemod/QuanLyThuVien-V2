@@ -17,7 +17,7 @@ namespace DuAn1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LoginRes.dashboard = new Dashboard();   
+            LoginRes.dashboard = new Dashboard();
             Application.Run(LoginRes.dashboard);
         }
     }

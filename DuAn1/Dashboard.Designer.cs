@@ -33,11 +33,8 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnQLNV = new System.Windows.Forms.Button();
             this.btnQlSach = new System.Windows.Forms.Button();
-            this.dataDuAn = new DuAn1.DataControler.DataDuAn();
             this.sachBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sachTableAdapter = new DuAn1.DataControler.DataDuAnTableAdapters.SachTableAdapter();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDuAn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sachBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,20 +76,6 @@
             this.btnQlSach.UseVisualStyleBackColor = true;
             this.btnQlSach.Click += new System.EventHandler(this.btnQlSach_Click);
             // 
-            // dataDuAn
-            // 
-            this.dataDuAn.DataSetName = "DataDuAn";
-            this.dataDuAn.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sachBindingSource
-            // 
-            this.sachBindingSource.DataMember = "Sach";
-            this.sachBindingSource.DataSource = this.dataDuAn;
-            // 
-            // sachTableAdapter
-            // 
-            this.sachTableAdapter.ClearBeforeFill = true;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,7 +90,6 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataDuAn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sachBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -117,9 +99,7 @@
 
         private System.Windows.Forms.Panel panelView;
         private System.Windows.Forms.Panel panelMenu;
-        private DataControler.DataDuAn dataDuAn;
         private System.Windows.Forms.BindingSource sachBindingSource;
-        private DataControler.DataDuAnTableAdapters.SachTableAdapter sachTableAdapter;
         private System.Windows.Forms.Button btnQlSach;
         private System.Windows.Forms.Button btnQLNV;
     }

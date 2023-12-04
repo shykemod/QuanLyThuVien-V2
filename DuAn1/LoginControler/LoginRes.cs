@@ -8,19 +8,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DuAn1.DataControler;
 using DuAn1.DataControler.DataDuAnTableAdapters;
+using static DuAn1.DataControler.DataDuAn;
 
 namespace DuAn1.LoginControler
 {
     public class LoginRes
     {
-        public static DataRow UserProperties;
+        public static NhanVienRow UserProperties;
         public static Dashboard dashboard;
 
-        public static DataRow Login(string user, string password)
+        public static NhanVienRow Login(string user, string password)
         {
 
-            var TaiKhoanData = new TaiKhoanTableAdapter();
-            DataRow check = TaiKhoanData.GetData().FirstOrDefault(tk => tk.userName.Equals(user) && tk.passWord.Equals(password));
+            var TaiKhoanData = new NhanVienTableAdapter();
+            NhanVienRow check = TaiKhoanData.GetData().FirstOrDefault(tk => tk.userName.Equals(user) && tk.passWord.Equals(password));
             return check;
         }
     }
