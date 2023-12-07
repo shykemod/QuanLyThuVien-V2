@@ -46,6 +46,7 @@ namespace DuAn1.NhanVienControler
 
         private void QuanLyNhanVien_Load(object sender, EventArgs e)
         {
+
             ShowData();
 
         }
